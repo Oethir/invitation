@@ -263,6 +263,11 @@
 
   <!-- Main card -->
   <div class="card">
+    <!-- Top-right music toggle -->
+    <div class="top-controls">
+      <button id="musicToggle" type="button">
+      </button>
+    </div>
 
     <!-- BEFORE YES SECTION -->
     <div id="beforeYes">
@@ -353,7 +358,7 @@
     const musicToggle = document.getElementById("musicToggle");
     const musicIcon = document.getElementById("musicIcon");
 
-    let musicPlaying = false;
+    let musicPlaying = true;
     let countdownInterval = null;
 
     function toggleMusic(playExplicit = false) {
